@@ -1,16 +1,5 @@
 require "pry"
 
-# Helper Method
-=begin
-def play(board)
-  play_count = 0
-  while play_count < 9
-    turn(board)
-    play_count += 1
-  end
-end
-=end
-
 def play(board)
   while (over?(board) != true && draw?(board) != true) # Checks to see if the game is over
     turn(board) # Calls for another turn
